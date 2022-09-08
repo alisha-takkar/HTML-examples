@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Layout using float</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        * { box-sizing: border-box;}  
+
+        body{
+          font-family: Arial;
+        }
+
+      /* Style the header */
+        header{
+          background-color: gray;
+          padding: 15px;
+          text-align: center;
+          font-size: 25px;
+          color: black;
+        }
+
+        /*creating two columns/boxes that float next to each other*/
+        nav{
+          float: left;
+          width: 30%;
+          background-color: lightsteelblue;
+          padding: 20px;
+          height: 300px;
+        }
+
+        /* styling list inside menu */
+        nav ul{
+          list-style-type: none;
+          padding: 0px;
+        }
+
+        article{
+          background-color: white;
+          width: 70%;
+          float: left;
+          padding: 20px;
+          height: 300px;
+        }
+
+        /* style the footer */
+        footer{
+          background-color: gray;
+          padding: 15px;
+          text-align: center;
+          color: black;
+        }
+
+        /* Responsive - layout to make coloumns/boxes stack on top of each other in case of small screens */
+        @media (max-width : 600px) {
+          nav, article{
+            width: 100%;
+            height: auto;
+          }
+        }
+      </style>
+  </head>
+
+  <body>
+    <header> FRUITS</header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#"> Mango</a></li>
+          <li><a href="#"> Apple </a></li>
+          <li><a href="#"> Banana</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <article>
+      <h1> MANGO </h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum.</p>
+    </article>
+
+    <footer> 
+     <p> A Footer </p>
+    </footer>
+  </body>
+</html>
