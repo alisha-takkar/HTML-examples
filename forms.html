@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2> Types of input </h2>
+    <form>
+      <p> <b>Text input </b></p>
+      <label for="fname"> FirstName </label><br>
+      <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+
+      <p> <b>A radio button input </b></p>
+      <input type="radio" id="radio" value="radio" name="radio">
+      <label for="radio"> A radio button </label>
+      <br>
+
+      <p> <b>A submit button </b></p>
+        <input type="submit" value="Submit" <br>
+
+      <p> <b>A dropdown list </b></p>
+      <label for="fruits"> Choose a fruit : </label><br>
+      <select id="fruits" name="fruits">
+        <option value="Mango"> Mango </option>
+        <option value="Apple"> Apple </option>
+        <option value="Banana"> Banana </option>
+       </select> <br>
+
+      <p><b> A textarea </b></p>
+          <textarea name="text" rows="10" cols="30"></textarea><br>
+
+      <p><b> A datalist </b> </p>
+      <input list="fruits" name="fruits">
+      <datalist id="fruits">
+        <option value="Mango"></option>
+        <option value="Banana"></option>
+        <option value="Apple"></option>
+        <option value="Grapes"></option>
+      </datalist><br>
+
+      <p> <b>Password input </b></p>
+      <input type="password" name="pass" id="pass"> <br>
+      
+        <p><b> Checkbox input </b></p>
+      <input type="checkbox" name="mango" id="mango" value="Mango">
+      <label for="mango"> Mango </label><br>
+
+      <p> <b>A number input - with restrictions</b></p>
+      <label for="num"> A number between 1-5 </label>
+      <input type="number" id="num" name="num" min="1" max="5"><br>
+
+      <p><b> A number input - with steps</b></p>
+      <label for="num"> A number between 10-50 </label>
+      <input type="number" id="num" name="num" min="10" max="50" step="5"><br>
+
+      <p><b> A date input - with date picker</b></p>
+      <label for="date"> Your birthday : </label>
+       <input type="date" name="date" id="date"> <br>
+
+      <p><b>A color picker</b></p>
+      <label for="color"> Pick a color </label>
+      <input type="color" id="color" name="color"><br>
+
+      <p> <b> A range input </b></p>
+      <label for="range"> A number between 1-50</label>
+      <input type="range" name="range" id="range" min="1" max="50"> <br>
+
+      <p> <b> A month input</b></p>
+      <input type="month" id="month" name="month"><br>
+
+      <p><b> A week input </b></p>
+      <input type="week" id="week" name="week">
+      <br>
+
+      <p> <b> A time input </b></p>
+      <input type="time" id="time" name="time">
+      <br>
+
+      <p><b> A local date-time field</b></p>
+      <input type="datetime-local" name="dt" id="dt">
+      <br>
+
+      <p><b> An email input</b></p>
+      <input type="email" name="email" id="email">
+      <br>
+
+      <p> <b> A search input </b></p>
+      <label for="search"> Google search</label>
+      <input type="search" id="search" name="search">
+      <br>
+
+      <p><b> A telephone input</b></p>
+      <input type="tel" id="tel" name="tel" placeholder="111-11-111" pattern="[1-9]{3}-[1-9]{2}-[1-9]{3}"> <br>
+
+      <p><b> An URL input</b></p>
+      <input type="url" id="url" name="url>" <br>
+
+          <p> *Without name attribute form data will not be submitted.</p>
+    </form>
+    <hr>
+
+    <h2> Grouping form data</h2>
+    <form>
+      <fieldset>
+        <legend> Your name</legend>
+        <form>
+          <label for="fname"> FirstName</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Enter first name"> <br>
+          <label for="lname"> LastName</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Your last name"
+        </form>
+      </fieldset>
+    </form><hr>
+  </body>
+</html>
